@@ -1,0 +1,24 @@
+{
+  "name": "discord-dm-nuker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A no-install console panel for deleting your own Discord DM messages.",
+  "license": "MIT",
+  "author": "S1MS4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/S1MS4/discord-dm-nuker.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node tests/scrubber.test.cjs",
+    "check": "node --check discord-dm-panel.js && node --check tests/scrubber.test.cjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "3.9.6"
+  }
+}
