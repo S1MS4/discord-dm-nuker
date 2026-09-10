@@ -20,6 +20,14 @@
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 120,
+    "proseWrap": "always",
+    "endOfLine": "lf",
+    "tabWidth": 2
+  },
   "devDependencies": {
     "prettier": "3.9.6"
   }

@@ -269,7 +269,7 @@ How to use this script:
           const id = job.buffer.values().next().value;
           if (await request('DELETE', `/channels/${job.id}/messages/${id}`, job.id, 'delete')) state.deleted++;
           job.buffer.delete(id);
-          update();
+          counter.textContent = String(state.deleted);
           continue;
         }
         const batch = await request(
