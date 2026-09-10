@@ -14,7 +14,9 @@
   },
   "scripts": {
     "test": "node tests/scrubber.test.cjs",
-    "check": "node --check discord-dm-panel.js && node --check tests/scrubber.test.cjs",
+    "check": "node --check discord-dm-panel.js && node --check tests/scrubber.test.cjs && node --check scripts/sync-readme.cjs",
+    "docs:sync": "node scripts/sync-readme.cjs",
+    "docs:check": "node scripts/sync-readme.cjs --check",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
